@@ -31,7 +31,7 @@ body{
     font-family: Helvetica;
     padding: 40px;
     text-align: center;
-    background: rgb(40, 40, 40);
+    background: rgb(100, 100, 100);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -48,7 +48,7 @@ body{
 }
 /* when hovering */
 .navbar a:hover {
-    color: black;
+    background-color: black;
 }
 /* when clicking link */
 .navbar a:active {
