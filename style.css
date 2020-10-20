@@ -1,0 +1,82 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: rgb(230, 230, 230);
+    font-family: Helvetica;
+
+}
+.container{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(40, 40, 40);
+
+
+}
+/* styles the entire div element */
+.navbar
+{
+    font-family: Helvetica;
+    padding: 80px;
+    text-align: center;
+    background: rgb(40, 40, 40);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+/* styles the links */
+.navbar a
+{
+    color: grey;
+    text-decoration: none;
+    font: 20px arial;
+    margin: 0px 10px;
+    padding: 14px 16px; /* space between elements */
+    color: white;
+}
+/* when hovering */
+.navbar a:hover {
+    color: black;
+}
+/* when clicking link */
+.navbar a:active {
+    background-color: white;
+    color: darkgoldenrod;
+}
+
+.container p{
+    margin: 60px;
+    padding:10px ;
+    color: #fff;
+}
+.logo {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  .heading a{
+    color: white;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font: 20px arial;
+
+  }
+li{
+    display: inline;
+}
