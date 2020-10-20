@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 body{
+    padding-top: 300px;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -13,17 +14,54 @@ body{
     font-family: Helvetica;
 
 }
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+.content1{
+  grid-area: content1;
+}
+
+.content2{
+  grid-area: content2;
+}
+
+.wrapper{
+  display: grid;
+grid-gap: 10px;
+  grid-template-columns: auto;
+  grid-template-areas:
+      "....... content1 content1"
+                    "....... content2 content2"
+}
 .container{
-    width: 80%;
+    width: 70%;
     height: auto;
     margin: auto;
-    display: flex;
+    display: fixed;
     flex-wrap: wrap;
     padding: 20px;
     border-radius: 20px;
-    background: rgb(40, 40, 40);
+    background: rgb(100, 100, 100);
 
-
+}
+.container p{
+        margin: 30px;
+        padding: 30px ;
+        color: rgb(255,255,255);
+}
+.container h2{
+        text-align: center;
+        margin: 30px;
+        padding: 30px ;
+        color: rgb(255,255,255);
+}
+.img{
+  display: block;
+  width: 950px;
+  height: 500px;
 }
 /* styles the entire div element */
 .navbar
@@ -39,12 +77,12 @@ body{
 /* styles the links */
 .navbar a
 {
-    color: grey;
+    color: white;
     text-decoration: none;
-    font: 20px arial;
+    font: 20px Helvetica;
     margin: 0px 10px;
     padding: 14px 16px; /* space between elements */
-    color: white;
+
 }
 /* when hovering */
 .navbar a:hover {
@@ -56,25 +94,30 @@ body{
     color: darkgoldenrod;
 }
 
-.container p{
-    margin: 60px;
-    padding:10px ;
-    color: #fff;
-}
-.logo {
+
+.logo h1{
+    font-family: Courier;
+    padding: 10px;
+    margin: 0px 10px;
+    text-align: left;
+    color: white;
     width: auto;
     height: auto;
     position: fixed;
-    top: 10px;
+    top: 20px;
     left: 10px;
     z-index: 1000;
+
+  }
+  .heading {
+    align-content: center;
   }
   .heading a{
     color: white;
-    text-transform: uppercase;
     color: white;
     text-decoration: none;
     font: 20px arial;
+
 
   }
 li{
