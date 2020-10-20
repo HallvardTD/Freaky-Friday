@@ -29,7 +29,7 @@ body{
 .navbar
 {
     font-family: Helvetica;
-    padding: 80px;
+    padding: 40px;
     text-align: center;
     background: rgb(40, 40, 40);
     position: fixed; /* Set the navbar to fixed position */
