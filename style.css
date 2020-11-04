@@ -42,7 +42,7 @@ nav {
   padding-bottom: 40px;
   text-align: left;
   background: #eee;
-  position: static;
+  position: fixed;
   width: 100%;
   border-bottom: 0.5px solid grey;
 }
@@ -85,22 +85,21 @@ nav {
   grid-row: 2;
 }
 .container1{
-    align-content: center;
     text-align: center;
     font-size: 1.2em;
     color: black;
-    height: auto;
-    margin: 10px;
-    display: fixed;
-    flex-wrap: wrap;
-    padding: 20px;
-    border-radius: 10px;
-    background: #fff;
 }
 .container1 p{
   text-align: center;
   margin: 40px;
   font-size: 1.8em
+}
+
+.container2{
+text-align: center;
+font-size: 3em;
+padding-top: 40px;
+padding-bottom: 40px;
 }
 
 .h2{
@@ -111,10 +110,9 @@ nav {
 
 .img{
   width: 100%;
-  margin-top: 13%;
-  margin-right: 10px;
+  margin-top: 15%;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .img {
     display: block;
     width: 100%;
@@ -122,19 +120,11 @@ nav {
 }
 
 
-.col-small-10 {width: 10%;}
-.col-small-20 {width: 20%;}
-.col-small-40 {width: 40%;}
+
 .col-small-50 {width: 50%;}
-.col-small-80 {width: 80%;}
 .col-small-100 {width: 100%;}
 
 @media only screen and (min-width: 1000px) {
-.col-tall-10 {width: 10%;}
-.col-tall-20 {width: 20%;}
-.col-tall-30 {width: 30%;}
-.col-tall-40 {width: 40%;}
 .col-tall-50 {width: 50%;}
-.col-tall-80 {width: 80%;}
 .col-tall-100 {width: 100%;}
 }
